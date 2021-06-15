@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR | grep -c ^d
+ls -laR | tail -n +5 | grep -c ^d
