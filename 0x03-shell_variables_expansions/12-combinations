@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | sed 's/oo//'|tr ' ' '\n'| head -n 64
+echo {a..z}{a..z} | tr ' ' '\n' | grep -v oo 
