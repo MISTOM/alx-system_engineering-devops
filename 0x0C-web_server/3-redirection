@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# configure my nginx server
+# /redirect_me is redirectiong me to another page
+
+apt-get update
+apt-get -y install nginx
+echo "Hello World!" | sudo tee -a /var/www/html/index.html
+sudo sed -i '36a rewrite ^/redirect_me https://www.google.com;' /etc/nginx/sites-available/default
+sudo service nginx restart
