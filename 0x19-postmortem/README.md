@@ -1,6 +1,6 @@
 # Postmortem
 
-![Developer Typo Funny](https://twitter.com/devopsreact/status/834887829486399488)
+![Developer Typo Funny](https://raw.githubusercontent.com/MISTOM/alx-system_engineering-devops/887d68037191d251d0c033d73b5775f60f11b759/0x19-postmortem/HowCanWeBeThisRubbish.gif)
 
 ## Issue Summary
 On Tuesday 22/02/2022 at approximately 07:32:16 GMT an error ocurred in an isolated container running Apache Web Server and MySQL with the purpose of displaying a Holberton Wordpress site. GET requests demonstrated that users received Error Code 500 (Internal Server Error). The root of the outage was determined, at 07:58:23 GMT, to be a Typografical error regarding a file with extension `.php` presenting itself with extension `.phpp`.
